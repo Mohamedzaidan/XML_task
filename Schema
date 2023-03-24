@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="Family">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Grandfather">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Father">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Mother" minOccurs="0"/>
+                    <xs:element name="Son" minOccurs="0">
+                      <xs:complexType>
+                        <xs:attribute name="Sport" type="xs:string"/>
+                        <xs:attribute name="age" type="xs:int"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Daughter" minOccurs="0">
+                      <xs:complexType>
+                        <xs:attribute name="Job" type="xs:string"/>
+                        <xs:attribute name="age" type="xs:int"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Job" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="uncle1" minOccurs="0"/>
+              <xs:element name="uncle2" minOccurs="0"/>
+              <xs:element name="aunt" minOccurs="0">
+                <xs:complexType>
+                  <xs:attribute name="sons" type="xs:int"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      </xs:complexType>
+	</xs:element>
+</xs:schema>

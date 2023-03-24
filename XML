@@ -1,0 +1,12 @@
+<Family xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Mohamed%20Zaidan/Desktop/1.xsd">
+	<Grandfather>
+		<Father Job="Engineer">
+			<Mother/>
+			<Son Sport="Football" age="15"/>
+			<Daughter Job="Engineer" age="20"/>
+		</Father>
+		<uncle1/>
+		<uncle2/>
+		<aunt sons="2"/>
+	</Grandfather>
+</Family>
